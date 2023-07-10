@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+div, h1 {
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    /* align-self: center; */
+    border: 10;
+}
+
+.whole {
+    flex-direction: column;
+}
+
+.title {
+    font-size: 80px;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.score{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.scoreHeader {
+    display: flex;
+    justify-content: center;
+    border: solid;
+}
+
+.points {
+    border: solid;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+

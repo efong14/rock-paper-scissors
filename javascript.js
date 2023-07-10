@@ -1,8 +1,16 @@
 let computerSelection = getComputerChoice();
         console.log(computerSelection);
 
-        let playerSelection = (prompt("Rock, Paper or Scissors?").toLowerCase());
-        console.log(playerSelection);
+        // let playerSelection = (prompt("Rock, Paper or Scissors?").toLowerCase());
+        // console.log(playerSelection);
+        let playerSelection = ""
+        
+        const rock = document.querySelector(".Rock");
+        rock.addEventListener('click', () => {
+            playerSelection = 'rock';
+            console.log (playerSelection)
+            console.log (playRound (playerSelection, computerSelection));
+        })
 
         let chooseAgain = () => {
             playerSelection = (prompt("Rock, Paper or Scissors?").toLowerCase());
@@ -13,20 +21,6 @@ let computerSelection = getComputerChoice();
         }
 
         function getComputerChoice () {
-            // let choiceRandom = Math.floor(Math.random()*3);
-            // switch (choiceRandom) {
-            // case 0:
-            //     return "rock";
-            //     break;
-            // case 1:
-            //     return "paper";
-            //     break;
-            // case 2:
-            //     return "scissors";
-            //     break;
-            // default:
-            //     "";
-            // }}
             const options = ["rock", "paper", "scissors"]
             const chosen = options [Math.floor(Math.random()*3)]
             // Generates a random number from 0-2 to choose one option from the array,
@@ -46,7 +40,6 @@ let computerSelection = getComputerChoice();
                 : "Try again!";
             }
         
-        console.log (playRound (playerSelection, computerSelection));
 
         // function game() {
         //     console.log (playRound(playerSelection, computerSelection));
