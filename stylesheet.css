@@ -27,6 +27,11 @@ div, h1 {
     padding: 50px;
 }
 
+.resultText {
+    align-self: center;
+    font-size: 40px;
+}
+
 .score{
     align-self: center;
     display: flex;
