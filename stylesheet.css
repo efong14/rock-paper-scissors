@@ -8,8 +8,6 @@ div, h1 {
 
 .container {
     display: flex;
-    /* align-self: center; */
-    border: 10;
 }
 
 .whole {
