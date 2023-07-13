@@ -20,9 +20,15 @@ div, h1 {
 }
 
 .button {
+    align-self: center;
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
+    width: 500px;
+}
+
+.rock, .paper, .scissors {
+    font-size: 25px;
 }
 
 .resultText {
@@ -41,12 +47,23 @@ div, h1 {
     display: flex;
     justify-content: center;
     border: solid;
+    font-size: 50px;
 }
 
 .points {
     border: solid;
     display: flex;
     justify-content: space-evenly;
+}
+
+.wins, .losses, .lossesNum, .winsNum {
+    font-size: 25px;
+}
+
+.tryAgain {
+    align-self: center;
+    font-size: 25px;
+    margin: 50px;
 }
 
 

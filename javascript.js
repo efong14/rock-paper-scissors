@@ -116,13 +116,15 @@ function gameOver () {
     wholeContainer.removeChild(btnContainer);
     wholeContainer.insertBefore(tryAgain, resultText)
     tryAgain.textContent = "Play Again!"
-    result = "You win!";
+    tryAgain.classList.add ("tryAgain")
+    result = "You won!";
     resultText.textContent = `${result}`;
 } else if (computerPoints == 5) {
     wholeContainer.removeChild(btnContainer);
     wholeContainer.insertBefore(tryAgain, resultText)
     tryAgain.textContent = "Play Again!"
-    result = "You Lose!";
+    tryAgain.classList.add ("tryAgain")
+    result = "You Lost!";
     resultText.textContent = `${result}`;
 }}
 // Checks if points have reached 5 and adds the play again button.
